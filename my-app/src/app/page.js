@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Imielist from "@/components/imielist";
 import Listalist from "@/components/lista";
-import Menu from "@/components/menu";
+
 export default function Home() {
   const lista = [{imie:"Kajetan",ok:true},{imie:"Kuba",ok:false},{imie:"Pablo",ok:true},{imie:"Ryszard",ok:false}]
   
@@ -15,7 +15,7 @@ export default function Home() {
             <Imielist key={index} imie={osoba.imie} ok={osoba.ok}/>
         ))}
        <Listalist lista={lista2}/>
-       <Menu/>
+       
     </div>
   );
 }
